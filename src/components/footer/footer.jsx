@@ -16,7 +16,7 @@ const FooterWrapper = styled.footer`
 `
 
 const Footer = () => {
-	let d = new Date;
+	let d = new Date();
 	return (
 		<FooterWrapper className="footer">
 			<p>Copyright {d.getFullYear()}</p>
