@@ -120,6 +120,12 @@ const App = () => {
 		}
 	}
 
+	const enterItem = (e) => {
+		if (e.code === "Enter") {
+			addToList()
+		}
+	}
+
 	return (
 		<AppWrapper>
 			<NavBar />
@@ -130,6 +136,7 @@ const App = () => {
 						className="searchbox"
 						type="text" 
 						onChange={updateSearch}
+						onKeyPress={enterItem}
 						value={searchQuery}
 						placeholder="Add item" 
 					/>
