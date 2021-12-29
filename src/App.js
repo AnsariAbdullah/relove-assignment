@@ -102,7 +102,7 @@ const App = () => {
 	}
 
 	const addToList = () => {
-		if(!searchQuery === ''){
+		if(searchQuery.length > 0){
 			setData((data) => [
 				...data,
 				searchQuery,
